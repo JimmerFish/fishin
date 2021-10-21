@@ -1,0 +1,12 @@
+ol {
+    list-style: none;
+    counter-reset: olCounter;
+}
+
+li {
+    counter-increment: olCounter;
+}
+
+li p::before {
+     content: counter(olCounter) ". ";
+}
